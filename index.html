@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./src/output.css">
+  <title>Calculator</title>
+</head>
+
+<body class="bg-purple-400 " style="font-family: poppins;">
+
+
+  <div class="min-h-screen flex items-center flex-col justify-center ">
+    <div class="border-[7px] border-white rounded-[30px] overflow-hidden">
+      <div class="relative h-44 sm:w-[260px] md:w-[300px] bg-slate-800 text-white">
+        <p class="absolute bottom-0 right-[12px] text-[40px] screen"></p>
+      </div>
+      <div class="grid grid-cols-4 md:w-[300px] sm:w-[260px] gap-[2px] md:text-[24px] sm:text-[20px]">
+        <button class="rounded-[2px] bg-gray text-purple-300 p-4" onClick="getValue('')">AC</button>
+        <button class="rounded-[2px] bg-gray text-purple-300 p-4" onClick="getValue('/')">/</button>
+        <button class="rounded-[2px] bg-gray text-purple-300 p-4" onClick="getValue('*')">*</button>
+        <button class="rounded-[2px] bg-pink-500 p-4" onClick="getValue('back')"><img src="./images/close.png"></button>
+        <button class="rounded-[2px] bg-gray text-white p-4" onClick="getValue(7)">7</button>
+        <button class="rounded-[2px] bg-gray text-white p-4" onClick="getValue(8)">8</button>
+        <button class="rounded-[2px] bg-gray text-white p-4" onClick="getValue(9)">9</button>
+        <button class="rounded-[2px] bg-purple-600 text-white p-4" onClick="getValue('-')">-</button>
+        <button class="rounded-[2px] bg-gray text-white p-4" onClick="getValue(4)">4</button>
+        <button class="rounded-[2px] bg-gray text-white p-4" onClick="getValue(5)">5</button>
+        <button class="rounded-[2px] bg-gray text-white p-4" onClick="getValue(6)">6</button>
+        <button class="rounded-[2px] bg-purple-600 text-white p-4" onClick="getValue('+')">+</button>
+        <button class="rounded-[2px] bg-gray text-white p-4" onClick="getValue(1)">1</button>
+        <button class="rounded-[2px] bg-gray text-white p-4" onClick="getValue(2)">2</button>
+        <button class="rounded-[2px] bg-gray text-white p-4" onClick="getValue(3)">3</button>
+        <button class="row-span-2 bg-purple-600 text-white" onClick="getValue('=')">=</button>
+        <button class="rounded-[2px] bg-gray text-white p-4" onClick="getValue('.')">.</button>
+        <button class="rounded-[2px] bg-gray text-white p-4" onClick="getValue(0)">0</button>
+        <button class="rounded-[2px] bg-gray text-white p-4" onClick="getValue('%')">%</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
